@@ -12,7 +12,7 @@ app = Flask(__name__)
 api = Api(app)
 
 client = MongoClient("mongodb://db:27017")
-db = client.strStorageDB
+db = client.imgRecogDB
 Users = db["Users"]
 
 def verify_pw(usr, pwd):
